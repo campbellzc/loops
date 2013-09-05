@@ -1,6 +1,13 @@
+import java.util.Scanner;
+
 public class Loops {
 	public static void main(String[] args) {
-		drugPot();
+		//drugPot();
+		exercise5();
+
+
+
+
 		// String s = "My String";
 		// int length = findLength(s);
 		// System.out.println(length);
@@ -54,6 +61,28 @@ public class Loops {
 				
 			}
 		}
+		
+	}
+	public static void exercise5() {
+		int value;
+		Scanner reader = new Scanner(System.in);
+
+		System.out.println("Please enter a positive integer: ");
+		value = reader.nextInt();
+		while (value > 1) {
+			if (value % 2 == 0) {
+				value = value/2;
+				System.out.println(value);
+			} else {
+				value = (3*value) + 1;
+				System.out.println(value);
+			}
+
+			
+		}
+		System.out.println("You have Reached 1!");
+	}
+	public static void exercise3() {
 		
 	}
 }
